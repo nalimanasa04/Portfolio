@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #d6e4ff, #e7ddff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Navbar */
+    header {
+      background: #0f0f0f;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #0c0c0b;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 80px 40px;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .hero-image img {
+      width: 280px;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #0e0c0e;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .hero-text {
+      flex: 2;
+      padding: 20px;
+    }
+
+    .hero-text h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: #333;
+    }
+
+    .hero-text p { 
+      font-size: 18px;
+      margin-bottom: 25px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #a5bed6;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0b0b0c;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Contact form */
+    .contact-form {
+      max-width: 500px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    .contact-form button {
+      padding: 12px 24px;
+      background: #29292b;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .contact-form button:hover {
+      background: #0f0f0f;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0c0c0c;
+      color: white;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .hero-text {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <div class="logo">MyPortfolio</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#Skills">Skills</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-image">
+      <img src="./WhatsApp Image 2026-03-13 at 19.30.19.jpeg" alt="My Photo">
+    </div>
+    <div class="hero-text">
+      <h1>Hi, I'm <span id="typed-name"></span></h1>
+      <p>
+        I’m passionate about building responsive web applications, 
+        Currently, I’m learning 🐍 Python to strengthen  
+        my skills in programming, data analysis, and backend development. 
+         My goal is to grow as a  full-stack developer.
+      </p>
+      <!-- Buttons -->
+      <a href="https://github.com/Varsha1432" target="_blank" class="btn">🚀 View Projects</a>
+      <a href="skills certificate.pdf" target="_blank" class="btn">📜 Skills Certificate</a>
+      <a href="#hobbies" class="btn">🎨 Hobbies</a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>🎓 Education</h2>
+    <p>B.Tech in Computer Science & Engineering 
+       Mohan Babu University, Batch of 2023</p>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h2>🎨 My Hobbies</h2>
+    <p>
+      Outside of academics and coding<br>I enjoy reading books 📚<br>
+       listening to music 🎶
+      traveling 🌍, and exploring creative arts 🎨. <br>
+      These hobbies help me stay creative,relaxed, and motivated.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>📩 Contact Me</h2>
+    <p>Feel free to reach out using the form below:</p>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 My Portfolio | Designed by Me</p>
+  </footer>
+
+  <script>
+    // Typing Effect
+    const typedName = document.getElementById("typed-name");
+    const myName = "Nali Manasa Yadav"; 
+    let i = 0;
+
+    function typeWriter() {
+      if (i < myName.length) {
+        typedName.innerHTML += myName.charAt(i);
+        i++;
+        setTimeout(typeWriter, 120);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
